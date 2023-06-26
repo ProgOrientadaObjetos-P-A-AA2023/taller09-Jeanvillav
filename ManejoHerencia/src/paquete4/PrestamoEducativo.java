@@ -21,6 +21,7 @@ public class PrestamoEducativo extends Prestamo {
 
     public PrestamoEducativo(Persona b, int t, String c) {
         super(b, t, c);
+        
     }
     
     
@@ -64,12 +65,14 @@ valor mensual del pago del préstamo del valor de la carrera*/
     public String toString(){
         String cadenaFinal = String.format("%s", super.toString());
         cadenaFinal = String.format("%sPrestamo Educativo\n"
+                + "Ciudad prestamo: %s\n"
                 + "Nombre del centro Educativo: %s\n"
                 + "Siglas del centro Educativo: %s\n"
                 + "Valor de la carrera: %.2f\n"
                 + "Valor mensual del pago del préstamo "
                 + "del valor de la carrera: %.2f\n",
                 cadenaFinal,
+                obtenerCiudadPrestamo().toUpperCase(),
                 obtenerCentroEducativo().obtenerNombre(),
                 obtenerCentroEducativo().obtenerSiglas(),
                 obtenerValorCarrera(),

@@ -60,13 +60,11 @@ para beneficiario, tiempo de préstamo en meses
                 + "Nombre del beneficiario: %s\n"
                 + "Apellido del beneficiario: %s\n"
                 + "Username del beneficiario: %s\n"
-                + "Número de meses: %d\n"
-                + "Ciudad: %s\n",
+                + "Número de meses: %d\n",
                 obtenerBeneficiario().obtenerNombre(),
                 obtenerBeneficiario().obtenerApellido(),
                 obtenerBeneficiario().obtenerUsername(),               
-                obtenerTiempoMeses(),
-                obtenerCiudadPrestamo());
+                obtenerTiempoMeses());
         
         return cadenaFinal;
     }

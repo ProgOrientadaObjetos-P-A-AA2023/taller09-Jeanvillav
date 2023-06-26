@@ -72,6 +72,7 @@ valor mensual de pago préstamo automóvil*/
     public String toString(){
         String cadenaFinal = String.format("%s", super.toString());
         cadenaFinal = String.format("%sPrestamo Automovil\n"
+                + "Ciudad prestamo: %s\n"
                 + "Tipo de Automovil: %s\n"
                 + "Marca de Automovil: %s\n"
                 + "Nombre del garante: %s\n"
@@ -80,6 +81,7 @@ valor mensual de pago préstamo automóvil*/
                 + "Valor del automovil: %.2f\n"
                 + "Valor Mensual del pago prestamo automovil: %.2f\n",
                 cadenaFinal,
+                obtenerCiudadPrestamo().toLowerCase(),
                 obtenerTipoAuto(),
                 obtenerMarcaAuto(),
                 obtenerGarante1().obtenerNombre(),
